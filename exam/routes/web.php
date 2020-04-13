@@ -1,10 +1,5 @@
 <?php
 
-use App\Http\Controllers\WebController;
-use App\Student;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
-use Illuminate\Validation\Rules\Unique;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,5 +14,3 @@ use Illuminate\Validation\Rules\Unique;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::post('/storeSurvey', 'WebController@storeSurvey');
